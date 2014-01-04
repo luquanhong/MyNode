@@ -1,0 +1,8 @@
+<% include layouttop %>
+
+<% if (user) { %>
+  <%- partial('say') %> 
+<% } %>
+<%- partial('posts', {posts:posts}) %>
+
+<% include layoutbottom %>
